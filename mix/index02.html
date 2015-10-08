@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<!-- HTML
+Concept Design - "Mix!" Soda Dispenser
+By Luke Juntunen -->
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta keywords="Concept, Design, Coke, Luke Jutnunen, Luke, Juntunen">
+<link rel="stylesheet" href="style.css" type="text/css" />
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<title>Mix! Soda Despenser</title>
+<style type="text/css">
+#wrapper{
+background:-webkit-linear-gradient(#fff, #DEEAFF);
+background:-moz-linear-gradient(#fff, #DEEAFF);
+background:-o-linear-gradient(#fff, #DEEAFF);
+background:linear-gradient(#fff, #DEEAFF);
+}
+</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<!--<div id="pickBar"></div>-->
+	
+		<div id="mainContent">
+			<div id="coke" class="firstChoice"><img src="images/coke.png" /></div>
+			<div id="fanta" class="firstChoice"><img src="images/fanta.png" /></div>
+			<div id="barqs" class="firstChoice"><img src="images/barqs.png" /></div>
+			<div id="pwrade" class="firstChoice"><img src="images/pwrade.png" /></div>
+			<div id="diet" class="firstChoice"><img src="images/diet.png" /></div>
+			<div id="sprite" class="firstChoice"><img src="images/sprite.png" /></div>
+			<div id="mMaid" class="firstChoice"><img src="images/mMaid.png" /></div>
+			<div id="water" class="firstChoice"><img src="images/water.png" /></div>
+		</div>
+		<div id="dispenseBar">
+		<div id="flavWrap">
+			<div id="classic" class="flav" onClick="alert('Despensing Soda!');">Classic</div>
+			<div id="cherry" class="flav" onClick="alert('Despensing Soda!');">Cherry</div>
+			<div id="vanilla" class="flav" onClick="alert('Despensing Soda!');">Vanilla</div>
+			<div id="lime" class="flav" onClick="alert('Despensing Soda!');">Lime</div>
+			<div id="raspberry" class="flav" onClick="alert('Despensing Soda!');">Raspberry</div>
+			<div id="orange" class="flav" onClick="alert('Despensing Soda!');">Orange</div>
+		</div>
+				<a href="#" id="mixBtn"><img src="images/mix.png"></a>
+		</div>
+	</div>
+	<script type="text/javascript">
+$( "#coke" ).click(function() {
+  $( "#coke" ).fadeTo( "slow" , 0.5, function() {
+  });
+});
+$( "#fanta" ).click(function() {
+  $( "#fanta" ).fadeTo( "slow" , 0.5, function() {
+  });
+});
+$( "#barqs" ).click(function() {
+  $( "#barqs" ).fadeTo( "slow" , 0.5, function() {
+  });
+});
+$( "#pwrade" ).click(function() {
+  $( "#pwrade" ).fadeTo( "slow" , 0.5, function() {
+  });
+});
+$( "#diet" ).click(function() {
+  $( "#diet" ).fadeTo( "slow" , 0.5, function() {
+  });
+});
+$( "#sprite" ).click(function() {
+  $( "#sprite" ).fadeTo( "slow" , 0.5, function() {
+  });
+});
+$( "#mMaid" ).click(function() {
+  $( "#mMaid" ).fadeTo( "slow" , 0.5, function() {
+  });
+});
+$( "#water" ).click(function() {
+  $( "#water" ).fadeTo( "slow" , 0.5, function() {
+  });
+});
+
+
+$( ".flav" ).click(function() {
+  $( ".firstChoice" ).fadeTo( "slow" , 1, function() {
+  });
+});
+</script>
+</body>
+</html>

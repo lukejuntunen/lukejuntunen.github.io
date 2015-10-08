@@ -1,0 +1,250 @@
+@font-face
+{
+font-family: code;
+src: url('code/CODE_LIGHT.ttf');
+}
+@font-face
+{
+font-family: code;
+src: url('code/CODE_BOLD.ttf');
+font-weight:bold;
+}
+
+
+body{
+	margin:0px;
+	padding:0px;
+	width:100%;
+	background:#000;
+	font-family:code, 'Helvetica', 'Futura', sans-serif;
+	height:4500px;
+	overflow:hidden;
+}
+h1{
+	font-weight:bold;
+	font-size:72px;
+	line-height:-20px;
+}
+#nav{
+	position:fixed;
+	left: 250px;
+	font-size:24px;
+	transition: opacity .5s ease-in-out;
+}
+#navIndent{
+	position:relative;
+	left:100px;
+	top:-75px;
+	cursor:pointer;
+}
+#nav2{
+	text-align:center;
+	position:absolute;
+	top:1500px;
+	width:100%;
+}
+#plane{
+	height:300px;
+}
+#quake{
+	height:300px;
+	position:relative;
+	top:200px;
+}
+#title{
+	font-size:100px;
+	font-weight:bold;
+	color:#fcfcfc;
+	padding-top:10px;
+	background:URL('images/Static.gif');
+	position:absolute;
+	left:0px;
+	top:350px;
+	width:100%
+}
+#aboutOverlay{
+	font-size:100px;
+	font-weight:bold;
+	color:#fcfcfc;
+	padding-top:10px;
+	background:URL('images/Static.gif');
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	text-align:center;
+	opacity:0;
+	transition: opacity .75s ease-in-out;
+}
+#aboutOverlay:hover{
+	opacity:.9;
+}
+#nav370, #quakeNav{
+	margin-left:-225px;
+	z-index:1;
+	opacity:0;
+	position:absolute;
+	background:URL('images/Static.gif');
+	font-size:32px;
+	width:450px;
+	text-align:center;
+	color:#fcfcfc;
+	font-weight:bold;
+	margin-top:5px;
+	transition: opacity .5s ease-in-out;
+	cursor:pointer;
+	left:50%
+}
+#nav370{
+	top:150px;
+
+}
+#quakeNav{
+	top:625px;
+
+}
+#vid, #vid2 {
+	width:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+#vid{
+	opacity:.5;
+	z-index:-1000;
+}
+#vid2{
+	z-index:-1001;
+}
+#vid video, #vid2 video{
+	position:fixed;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	right:0px;
+}
+#posterBand370{
+	margin-left:-50px;
+	position:absolute;
+	top:0;
+	left:100%;
+	width:350px;
+	background:#333;
+	opacity:0.8;
+	height:100%;
+	overflow:scroll;
+}
+#posterBand370:hover{
+	margin-left:-350px;
+}
+#posterBandQuake{
+	margin-left:-50px;
+	position:absolute;
+	top:3000px;
+	left:100%;
+	width:350px;
+	background:#333;
+	opacity:0.8;
+	height:100%;
+	overflow:scroll;
+}
+#posterBandQuake:hover{
+	margin-left:-350px;
+}
+#infoBand370{
+	position:absolute;
+	top:0px;
+	left:-300px;
+	width:350px;
+	background:#333;
+	opacity:0.8;
+	height:100%;
+	overflow:scroll;
+}
+#infoBand370:hover{
+	left:0px;
+}
+#infoBandQuake{
+	position:absolute;
+	top:3000px;
+	left:-300px;
+	width:350px;
+	background:#333;
+	opacity:0.8;
+	height:100%;
+	overflow:scroll;
+}
+#infoBandQuake:hover{
+	left:0px;
+}
+#infoPane{
+	width:260px;
+	float:left;
+	padding:20px;
+	color:#fcfcfc;
+	font-family:"Helvetica Neue", serif;
+	font-weight:100;
+}
+#infoTab{
+	left:300px;
+	color:#fcfcfc;
+	font-size:34px;
+	height:50px;
+	width:50px;
+	position:absolute;
+	-webkit-transform:rotate(-90deg);
+	-moz-transform:rotate(-90deg);
+	-o-transform:rotate(-90deg);
+	margin-top:125px;
+	padding-left:15px;
+}
+#moreTab{
+	color:#fcfcfc;
+	font-size:34px;
+	height:50px;
+	width:50px;
+	position:absolute;
+	-webkit-transform:rotate(-90deg);
+	-moz-transform:rotate(-90deg);
+	-o-transform:rotate(-90deg);
+	margin-top:125px;
+	padding-left:15px;
+}
+
+#posterContainer{
+	height:100%;
+	width:300px;
+	float:right;
+}
+.poster {
+	width:300px;
+	overflow:hidden;
+	text-align:center;
+	float:right;
+	margin:5px 0px;
+}
+.poster img{
+	max-width:90%;
+}
+#returnToFront{
+	position:fixed;
+	top:95%;
+	left:50%;
+	width:100px;
+	margin-left:-100px;
+	text-align:center;
+	font-size:34px;
+	background:URL('images/Static.gif');
+	height:20px;
+	color:#fcfcfc;
+	padding:5px 5px 0px 5px;
+	font-weight:bold;
+	opacity:0;
+	transition: opacity .5s ease-in-out;
+	cursor:pointer;
+}
+a:link{
+text-decoration:none;
+color:#fcfcfc;
+}

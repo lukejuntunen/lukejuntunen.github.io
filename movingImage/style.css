@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin:0;
+	padding:0;
+	background:#010101;
+	height:3240px;
+	width:5760px;
+}
+#eyes{
+	
+}
+#mid, #left, #right, #up, #down{
+	width:1920px;
+	height:1080px;
+	margin:0px;
+	padding:0px;
+}
+#mid, #up, #down{
+	text-align:center;
+}
+#right, #left{
+	padding-top:150px;
+}
+#mid{
+	position:absolute;
+	top:1080px;
+	left:1920px;
+}
+#up{
+	position:absolute;
+	top:0px;
+	left:1920px;
+	cursor:s-resize;
+}
+#left{
+	position:absolute;
+	top:1080px;
+	left:0px;
+	text-align:left;
+	float:left;
+	cursor:e-resize;
+}
+#down{
+	position:absolute;
+	top:2160px;
+	left:1920px;
+	cursor:n-resize;
+}
+#right{
+	position:absolute;
+	top:1080px;
+	left:3840px;
+	text-align:right;
+	cursor:w-resize;
+}
+#audio {
+	display:none;
+}
+#bottomVideo{
+	position:absolute;
+	bottom:0px;
+	left:640px;
+}

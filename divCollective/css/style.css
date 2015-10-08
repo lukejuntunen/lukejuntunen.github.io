@@ -1,0 +1,121 @@
+body{
+	font-family:"Helvetica", Sans-serif;
+	font-weight:200;
+}
+a:link{
+	text-decoration:none;
+	color:#000;
+}
+.caption{
+	position:absolute;
+	left:0;
+	top:0;
+	opacity:0;
+	transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+	width:420px;
+	height:100%;
+	background:#000;	
+	color:#fff;
+	padding-left:20px;
+	padding-right:20px;
+	font-size:1.25em;
+}
+.caption:hover{
+	opacity:.8;
+}
+#left{
+	text-align:right;
+}
+#right{
+	text-align:left;
+	}
+	
+	
+	
+/*Carousel Jquery Styling*/
+  .container{
+  	width:100%;
+  	margin:0 auto;
+  	text-align:center;
+	position:relative;
+  	}
+  #slides img {
+  max-width: 960px;
+  width: auto\9;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  text-align:center;
+}
+  #slides {
+      display: none
+      width:100%;
+    }
+
+    #slides .slidesjs-navigation {
+      margin-top:3px;
+    }
+
+    #slides .slidesjs-previous {
+      margin-right: 5px;
+      float: left;
+	  position:absolute;
+	  top:250px;
+	  left:-25px;
+    }
+
+    #slides .slidesjs-next {
+      margin-right: 5px;
+      float: left;
+	  position:absolute;
+	    top:250px;
+	  right:-25px;
+    }
+
+    .slidesjs-pagination {
+      margin: 6px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }

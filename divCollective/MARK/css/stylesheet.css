@@ -1,0 +1,42 @@
+*	{
+margin: 0px;
+padding: 0px;
+}
+
+body { text-align: left;
+		background: #FFF;
+		}
+
+#wrapper {
+	
+	margin: 0px auto;
+	padding: 0px;
+	text-align:center;
+	}
+
+	#main_header_h1{
+	font: 60px 'Oswald', sans-serif;
+	color: #878786;
+	
+	}
+	
+	.grid_3 img{
+	max-width:100%;
+	}
+	
+	.grid_3{
+	height: 220px;
+	overflow: hidden;
+	}
+	.gallery{
+	max-width:90%;
+	max-height:90%;
+	}
+	
+	#center{
+	padding-top:100px;
+	}
+	
+	#center2{
+	padding-top:50px;
+	}

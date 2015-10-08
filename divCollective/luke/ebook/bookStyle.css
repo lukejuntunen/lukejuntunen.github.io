@@ -1,0 +1,97 @@
+@font-face {
+font-family: DtoD;
+src: url('dirt2death.ttf')
+}
+
+
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	text-align:center;
+	margin:auto;
+	font-family:'DtoD';
+	font-size:16px;
+}
+#bookWrapper{
+	display:block;
+	width:768px;
+	margin:0px auto;
+	font-size:1em;
+	}
+#bookContent{
+	width:650px;
+	float:left;
+	height:924px;
+	font-family:'DtoD';
+	position:relative;
+	border-bottom:solid 1px #aaa;
+	color:#555;
+	background:#f7f7f7;
+}
+#text{
+	padding:2.5em;
+	text-align:left;
+	font:100% Baskerville, Times New Roman, serif;
+	font-weight:200;
+	font-size:16px;
+	color:#000;
+	line-height:1.2em;
+	letter-spacing:1px;
+}
+#left, #right{
+	width:2.5em;
+	float:left;
+	height:924px;
+	margin:0;
+	background:#f7f7f7;
+	border-bottom:solid 1px #aaa;
+}
+#left{
+	border-right:solid 1px #aaa;
+}
+#right{
+	border-left:solid 1px #aaa;
+}
+#left:hover, #right:hover{
+	background:#ccc;
+}
+br {
+	line-height:2em;
+	}
+h1 {
+	text-align:right;
+	font-size:8em;
+	font-family:'DtoD';
+
+}
+#title{
+	position:absolute;
+	top:60%;
+	left:20%;
+	line-height:5em;
+	padding-right:2.5em;
+}
+#pgNum{
+	position:absolute;
+	height:2em;
+	/*width:100%;*/
+	top:892px;
+	font-size:1.5em;
+	}
+#topTitle{
+	font-family:'Baskerville', 'Times New Roman', serif;
+	font-size:.75em;
+	position:relative;
+	width:100%;
+	top:.75em;
+	text-align:center;
+}
+#end {
+	position:absolute;
+	top:70%;
+	left:75%;
+}
+	
+}

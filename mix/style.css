@@ -1,0 +1,205 @@
+/* Css Stylesheet
+Concept Design - "Coke Freestyle: Mix!" Soda Dispenser
+By Luke Juntunen */
+
+
+@font-face
+{
+font-family: HelvNeuLi;
+src: url(HelveticaNeueLight.ttf);
+}
+
+body {
+padding:0;
+margin:0;
+width:100%
+scrollbar:none;
+}
+
+#wrapper{
+margin:0px auto;
+width:1024px;
+height:768px;
+font-family:HelvNeuLi;
+color:#fff;
+overflow:hidden;
+position:relative;
+}
+
+
+
+
+
+
+
+/*First Page Content*/
+
+
+#pickBar{
+background:#d4e7fa;
+font-size:48px;
+padding:20px 100px 0px 100px;
+height:75px;
+width:100%;
+position:absolute;
+top:0;
+left:0;
+z-index:-1000;
+}
+
+#mainContent{
+height:473px;
+}
+
+.firstChoice{
+margin:23px 0 0 46px;
+width:200px;
+height:200px;
+float:left;
+opacity:1;
+}
+
+.firstChoice img{
+height:100%;
+}
+
+.firstChoice:hover{
+opacity:.75;
+transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-webkit-transition: opacity .5s ease-in-out;
+}
+
+#dispenseBar{
+height:275px;
+font-size:36px;
+text-align:center;
+border-radius:15px 15px 0 0;
+-webkit-appearance: none;
+text-shaadow: 0 0 5px #000;
+padding:40px 0 0 25px ;
+}
+
+.flav{
+	width:250px;
+	height:40px;
+	float:left;
+	background:#888;
+	margin-top:15px;
+	margin-left:15px;
+	padding-top:5px;
+	padding-bottom:10px;
+	border-radius:5px;
+	opacity:.5;
+	cursor:default;
+	
+}
+.flav:hover{
+	opacity:.75;
+	transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
+}
+#flavWrap{
+	width:700px;
+}
+#dispenseBar img:hover{
+opacity:.75;
+transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-webkit-transition: opacity .5s ease-in-out;
+
+}
+
+
+
+
+
+/* Page 2 Content */
+
+
+
+
+#sliders{
+}
+#headers{
+font-family:HelvNeuLi;
+width:100%;
+color:#000;
+font-size:28px;
+padding:0 20px;
+}
+#headers img{
+width:68px;
+}
+#topWrap{
+width:100%;
+margin:0 0 25px 0;
+padding:12px 0px 12px 0;
+border-radius:0  0 15px 15px;
+font-size:72px;
+color:#000;
+}
+#topLogo{
+text-align:center;
+
+opacity:.85;
+}
+#go{
+	position:absolute;
+	top:75px;
+	left:850px;
+	width:120px;
+	height:100px;
+	border-radius:100px;
+	background:#ff0000;
+	padding:35px 0 0 15px;
+	color:#000;
+	border:#000 solid 2px;
+	cursor:default;
+	opacity:.8;
+}
+#go:hover{
+opacity:.5;
+}
+#backButt{
+	position:absolute;
+	top:10px;
+	left:10px;
+	opacity:1;
+	z-index:1000;
+}
+#backButt img{
+width:50%;
+}
+#backButt:hover{
+opacity:.75;
+}
+
+
+
+
+/* Unified Frame Styles */
+
+
+#frameWrap{
+width:2048px;
+}
+iframe{
+float:left;
+}
+#link1{
+position:absolute;
+top:493px;
+left:624px;
+width:400px;
+height:275px;
+}
+#link2{
+position:absolute;
+top:0px;
+left:1024px;
+width:50px;
+height:50px;
+}
+

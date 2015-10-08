@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>The Moving Image</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<script type="text/javascript" src="script.js" type="text/javascript">
+</script>
+</head>
+<body onload="window.scroll(xDisplacement,1080)">
+<div id="mid" onmousedown="pageScroll();">
+<img id="eyes" src="images/left.jpg" />
+</div>
+<div id="up" onmouseup="backHome();">
+<video width="640px" autoplay="autoplay" loop="loop">
+<source src="video/up2.mp4" type="video/mp4" />
+<source src="video/up2.ogv" type="video/ogg" />
+</video><br />
+<video width="640px" autoplay="autoplay" loop="loop">
+<source src="video/up1.mp4" type="video/mp4" />
+<source src="video/up1.ogv" type="video/ogg" />
+</video>
+</div>
+<div id="left" onmouseup="backHome();">
+<video width="640px" autoplay="autoplay" loop="loop">
+<source src="video/left2.mp4" type="video/mp4" />
+<source src="video/left2.ogv" type="video/ogg" />
+</video>
+<video width="640px" autoplay="autoplay" loop="loop">
+<source src="video/left1.mp4" type="video/mp4" />
+<source src="video/left1.ogv" type="video/ogg" />
+</video>
+</div>
+<div id="down" onmouseup="backHome();">
+<div id="bottomVideo">
+<video width="640px" autoplay="autoplay" loop="loop">
+<source src="video/down2.mp4" type="video/mp4" />
+<source src="video/down2.ogv" type="video/ogg" />
+</video><br />
+<video width="640px" autoplay="autoplay" loop="loop">
+<source src="video/down1.mp4" type="video/mp4" />
+<source src="video/down1.ogv" type="video/ogg" />
+</video>
+</div>
+</div>
+<div id="right" onmouseup="backHome();">
+<video width="640px" autoplay="autoplay" loop="loop">
+<source src="video/right1.mp4" type="video/mp4" />
+<source src="video/right1.ogv" type="video/ogg" />
+</video>
+<video width="640px" autoplay="autoplay" loop="loop">
+<source src="video/right2.mp4" type="video/mp4" />
+<source src="video/right2.ogv" type="video/ogg" />
+</video>
+</div>
+
+<div id="audio">
+<audio autoplay="autoplay" loop="loop">
+<source type="audio/mpeg" src="audio/amazingplan.mp3" />
+</audio>
+</div>
+<div id="read" style="position:fixed; bottom:0px; left:0px;"></div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+*	{
+margin: 0px;
+padding: 0px;
+}
+
+body { text-align: left;
+		background: #e1e1e1;
+		}
+
+#wrapper {
+	width: 500px;
+	margin: 0px auto;
+	padding: 40px;
+	text-align:center;
+	}
+#main_header {
+	border-bottom: 1px solid #999;
+	padding: 10px;
+	}
+	#main_header_h1{
+	font: italic 35px "cochin",serif;
+	line-height: 40px
+	}
+	#main_header_h2{
+	font: 12px "Helvetica",sans-serif;
+	}
+	#main_header_h3{
+	font: italic 20px "cochin",serif;
+	}
+#main_menu {
+		padding: 10px 10px;
+		font: 12px "Helvetica" , sans-serif;
+		}
+		
+#main_menu li {
+		display: inline-block;
+		list-style: none;
+		padding: 10px;
+		}
+
+#main_section {
+	padding: 15px;
+	width: 430px;
+	margin: 2px auto;
+	word-spacing: 1px;
+	line-height: 18px;
+	text-align:left;
+	}
+#foot_wrapper {
+	width: 400px;
+	margin: 0px auto;
+	padding: 20px;
+	text-align:center;
+	}
+#main_footer {
+	clear: both;
+	text-align: center;
+	padding: 10px;
+	border-top: 1px solid #999;
+	}
+	
+p { 
+	padding: 3px
+	}

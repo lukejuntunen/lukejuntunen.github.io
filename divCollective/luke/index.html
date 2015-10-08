@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<link rel="icon" href="../../images/favicon.png" type="image/x-icon">
+		<link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Luke Juntunen - Div Collective</title>
+		<link rel="stylesheet" href="../css/reset.css" type="text/css" />
+		<link rel="stylesheet" href="../css/960.css" type="text/css" />
+		<!--<link rel="stylesheet" href="../css/text.css" type="text/css" />-->
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+		<script src="js/stellar.js" type="text/javascript"></script>
+		<link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
+		
+		
+		<!-- Set-up Script for Paralax and ScrollTo Jquery -->
+		
+		
+		
+		<script type="text/javascript">
+		$(function(){
+			$.stellar({
+				horizontalScrolling: false,
+				verticalOffset: 0,
+    			horizontalOffset: 0,
+    			hideDistantElements:false
+			});
+		});
+		$.fn.scrollTo = function( target, options, callback ){
+ 	 		if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
+  			var settings = $.extend({
+  		      scrollTarget  : target,
+  			  offsetTop     : 50,
+ 			  duration      : 1000,
+ 			  easing        : 'swing'
+ 			 }, options);
+  			return this.each(function(){
+    		 var scrollPane = $(this);
+   			 var scrollTarget = (typeof settings.scrollTarget == "number") ? settings.scrollTarget : $(settings.scrollTarget);
+   			 var scrollY = (typeof scrollTarget == "number") ? scrollTarget : scrollTarget.offset().top + scrollPane.scrollTop() - parseInt(settings.offsetTop);
+   			 scrollPane.animate({scrollTop : scrollY }, parseInt(settings.duration), settings.easing, function(){
+   			   if (typeof callback == 'function') { callback.call(this); }
+ 			   });
+			  });
+			}
+		</script>
+	<head>
+	
+	
+	
+	<!-- Body set-up, data-stellar variables create paralax -->
+	
+	
+	<body data-stellar-offset-parent="true">
+		<div class="container_12">
+			<div data-stellar-offset-parent="true"  class="grid_12">
+				<!--<div class="clearfix" >
+					<div  class="grid_3 push_8" data-stellar-ratio="1">
+						<img src="../images/DIV_LOGO.png" width="100%" /> 
+					</div>
+				</div>	-->		
+				<div class="clearfix">
+					<div class="grid_4" data-stellar-ratio="2">
+						<div class="name">Luke Juntunen</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- iframe embeds whole ebook html into window frame to fit into single page without linking away -->
+		
+		
+		
+		
+		<div class="container_12" data-stellar-offset-parent="true">
+			<div class="grid_10 push_2" id="ebook" data-stellar-ratio="1.7">
+				<iframe width="100%" height="1024px" overflow="hidden" src="ebook/index.html"></iframe>
+			</div>
+		</div>
+		
+		
+		
+		<!--Icon Set with different paralax values locking to top of brick div -->
+		
+		
+		
+		<div class="icons" data-stellar-background-ratio="1.5">
+			<div class="container_12" id="icons" data-stellar-offset-parent="true" data-stellar-vertical-offset="100">
+					<div class="grid_3" data-stellar-ratio="1">
+						<img src="images/a&d.png" />
+					</div>
+					<div class="grid_3" data-stellar-ratio=".5">
+						<img src="images/FMS.png" />
+					</div>
+					<div class="grid_3" data-stellar-ratio="3">
+						<img src="images/MUS.png" />
+					</div>
+					<div class="grid_3" data-stellar-ratio="2">
+						<img src="images/soc.png" />
+					</div>
+				<div class="clearfix">
+						<div class="grid_3" data-stellar-ratio="1">
+						<img src="images/design.png" />
+					</div>
+					<div class="grid_3" data-stellar-ratio=".75">
+						<img src="images/NEWMEDIA.png" />
+					</div>
+					<div class="grid_3 push_3" data-stellar-ratio="3">
+						<img src="images/Nat.png" />
+					</div>
+				</div>
+				<div class="clearfix">
+					<div class="grid_3" data-stellar-ratio="1.23">
+						<img src="images/Painting.png" />
+					</div>
+					<div class="grid_3" data-stellar-ratio="1.23">
+						<img src="images/Sculpture.png" />
+					</div>
+				</div>
+				
+					<div class="grid_3" data-stellar-ratio=".89">
+						<img src="images/Printmaking.png" />
+					</div>
+					<div class="grid_3" data-stellar-ratio="1.23">
+						<img src="images/Photo.png" />
+					</div>
+					<!--<div class="grid_3 push_3" data-stellar-ratio="1.62" id="whatIs"><h1>SUNY Purchase Icon Set</h1></div>-->
+				</div>
+			</div>
+			
+			<!-- Videos offset to either side -->
+			
+			
+		<div class="container_12" id="vidGraph">
+			<div class="grid_9"><iframe src="http://player.vimeo.com/video/76293620?title=0&amp;byline=0&amp;portrait=0" width="660" height="371" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+			<div class="grid_9 push_3"><iframe src="http://player.vimeo.com/video/77367263?title=0&amp;byline=0&amp;portrait=0" width="660" height="371" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+			<div class="grid_9"><iframe src="http://player.vimeo.com/video/78886799?title=0&amp;byline=0&amp;portrait=0" width="660" height="371" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+			<div class="grid_9 push_3"><iframe src="http://player.vimeo.com/video/79059073?title=0&amp;byline=0&amp;portrait=0" width="660" height="371" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+		</div>
+		
+		
+		
+		<!-- Once again, iframe is used to embed the page within one page -->
+		
+		
+		<iframe class="coffee" width="100%" height="100%" src="http://students.purchase.edu/luke.juntunen/wiki"></iframe>
+		
+		
+		
+		<!-- Video art pieces with paralax and locking similar to logos -->
+		
+		<span id="vidAnchor" style="position:absolute;"></span>
+		<div class="container_12"  id="video" data-stellar-offset-parent="true" data-stellar-vertical-offset="-700">
+		<div class="grid_6" data-stellar-ratio="1.5">
+		<iframe src="http://player.vimeo.com/video/55174690?title=0&amp;byline=0&amp;portrait=0" width="440" height="248" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</div>
+		<div class="grid_6" data-stellar-ratio="1">
+		<iframe src="http://player.vimeo.com/video/41623031?title=0&amp;byline=0&amp;portrait=0" width="440" height="248" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</div>
+		<div class="grid_6" data-stellar-ratio="1.5">
+		<iframe src="http://player.vimeo.com/video/51978251?title=0&amp;byline=0&amp;portrait=0" width="440" height="248" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</div>
+		<div class="grid_6" data-stellar-ratio="1">
+		<iframe src="http://player.vimeo.com/video/53426966?title=0&amp;byline=0&amp;portrait=0" width="440" height="248" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</div>
+		<div class="grid_6" data-stellar-ratio="1.5">
+		<iframe src="http://player.vimeo.com/video/49469413?title=0&amp;byline=0&amp;portrait=0" width="440" height="248" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</div>
+		<div class="grid_6" data-stellar-ratio="1">
+		<iframe src="http://player.vimeo.com/video/54344575?title=0&amp;byline=0&amp;portrait=0" width="440" height="248" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>		
+		</div>
+	</div>
+	
+	
+	<!-- My Personal Logo -->
+	
+	
+	<div class="container_12" id="bottom">
+		<div class="grid_4 push_4">
+		<img src="images/logo.png" width="100%" />
+		</div></div>
+		
+		
+		<!-- Fixed side nav with ScrollTo Plug in for smooth transition -->
+		
+	
+		
+		<div class="nav">
+			<a href="#" onClick="$('body').scrollTo(0);">>>Top</a><br />
+			<a href="#" onClick="$('body').scrollTo(50);">>>eBook</a><br />
+			<a href="#" onClick="$('body').scrollTo(1200);">>>Purchase Icon Set</a><br />
+			<a href="#" onClick="$('body').scrollTo(2285);">>>Motion Graphics</a><br />
+			<a href="#" onClick="$('body').scrollTo(3888);">>>Wikipedia: Coffee</a><br />
+			<a href="#" onClick="$('body').scrollTo(displace);">>>Video</a><br />
+			<a href="#" onClick="$('body').scrollTo(5450);">>>Bottom</a><br />
+		</div>
+		
+		
+		<!-- Quick function to fix for resizing coffee iframe -->
+		
+		
+		
+		<script type="text/javascript">
+			var vidOffset = $( '.coffee' ).height();
+			var displace = vidOffset + 3888;
+		</script>
+	</body>
+</html>
