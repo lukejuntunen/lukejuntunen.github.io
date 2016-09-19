@@ -1,4 +1,25 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+
+         $(function() {
+            $.ajax({
+              type: 'GET',
+              url: 'https://docs.google.com/spreadsheets/d/1-XAO8Ct2q27FZ8yRmFvGykcmwGOklC-84FjilVdeJKc/gviz/tq?tqx=out:html&tq&gid=2',
+              dataType: 'html',
+              success: function(data) {
+                var $frame = $("<iframe src='about:blank'/>").hide();
+                $frame.appendTo('body');
+                var doc = $frame.get(0).contentWindow.document;
+                doc.write(data);
+                var $title = $('table', doc);
+                //alert('Title: '+$title.text() );
+                $frame.remove();
+                document.getElementById('embolden').innerHTML = $title.text();
+              }
+            });
+          });
+</script>
 <style type="text/css">
 #tallyGraphic{
   font-family: 'Roboto', sans-serif;
@@ -15,5 +36,5 @@
   line-height: 2;
 }
 </style>
-<img src="MercyFlight.jpg" />
+<img src="http://static.lakana.com/nxsglobal/rochesterfirst/photo/2016/09/19/MercyFlight_1474303272150_11116749_ver1.0.jpg" />
 <div id="tallyGraphic"><span id="embolden"></span><br />Raised<br />So Far</div>
