@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<student-data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <record>
+	<Major>data</Major>
+	<Instrument>data</Instrument>
+	<Major2>data</Major2>
+	<Minor>data</Minor>
+	<Distinctions>data</Distinctions>
+	<Official_Name>data</Official_Name>
+	<Marching_Name>data</Marching_Name>
+	<Degree>data</Degree>
+	<Conferral_date>data</Conferral_date>
+	<Marching_Date>data</Marching_Date>
+    </record>
+    <record>
+	<Major>data</Major>
+	<Instrument>data</Instrument>
+	<Major2>data</Major2>
+	<Minor>data</Minor>
+	<Distinctions>data</Distinctions>
+	<Official_Name>data</Official_Name>
+	<Marching_Name>data</Marching_Name>
+	<Degree>data</Degree>
+	<Conferral_date>data</Conferral_date>
+	<Marching_Date>data</Marching_Date>
+    </record>
+</student-data>

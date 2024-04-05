@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Names:</h2>
+
+<button type="button" onclick="loadXMLDoc()">
+Get Names</button>
+
+<p id="demo"></p>
+
+<script>
+function loadXMLDoc() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xmlhttp.open("GET", "MarchingList.xml", true);
+  xmlhttp.send();
+}
+
+function myFunction(xml) {
+  var x, i, xmlDoc, txt, Major, final, name, instrument, minor, distinction, cdate;
+  xmlDoc = xml.responseXML;
+  txt = "";
+  name = xmlDoc.getElementsByTagName("Marching_Name");
+  x = xmlDoc.getElementsByTagName("record");
+  Major = xmlDoc.getElementsByTagName("Major");
+  instrument = xmlDoc.getElementsByTagName("Instrument");
+  distinction = xmlDoc.getElementsByTagName("Distinctions");
+  minor = xmlDoc.getElementsByTagName("Minor");
+  cdate = xmlDoc.getElementsByTagName("Conferral_date>");
+    
+  for (i = 0; i< x.length; i++) {
+   txt += "<strong>" + name[i].childNodes[0].nodeValue + "</strong><br>" + Major[i].childNodes[0].nodeValue + " &#40;" + instrument[i].childNodes[0].nodeValue + "&#41;, " + distinction[i].childNodes[0].nodeValue + "; " + minor[i].childNodes[0].nodeValue + " &mdash;Minor<br><br>";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
+
+<!--Applied Music (Tuba)—Major, with High Distinction; History—Minor (March 7, 2023)-->

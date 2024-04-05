@@ -1,0 +1,68 @@
+/* CSS DOCUMENT */
+
+
+@font-face
+{
+font-family: pixel;
+src: url(mb3.ttf);
+}
+
+
+body{
+font-family:pixel;
+}
+
+#header{
+	font-size:72px;
+	text-align:right;
+	padding-top:20px;
+	cursor:pointer;
+}
+
+#lss{
+	font-size:56px;
+	position:relative;
+	top:-6px;
+}
+
+#logo img{
+	width:100%;
+	cursor:pointer;
+}
+
+#nav{
+	font-size:24px;
+	text-align:right;
+}
+
+#content{
+	font-size:150px;
+	text-align:center;
+	padding-top:50px;
+}
+#about{
+	font-family:'Helvetica', sans-serif;
+}
+
+a:link{
+text-decoration:none;
+color:#000;
+}
+
+h1, h2{
+	font-family:pixel;
+}
+
+#about h2{
+	text-decoration:italics;
+}
+
+a:visited{
+text-decoration:none;
+color:#000;
+}
+
+a:hover{
+text-decoration:none;
+color:#999;
+}

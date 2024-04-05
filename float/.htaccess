@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^float\.cursedhands\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.float\.cursedhands\.com$
+RewriteRule ^(.*)$ "https\:\/\/www\.legendkeeper\.com\/app\/ckzsxmsf401ys0808obg9y2gb$1" [R=301,L]
+

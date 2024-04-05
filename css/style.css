@@ -25,8 +25,10 @@ src: url(../fonts/CODEBold.otf);
 /*Universal Styles*/
 
 body {
+	margin:0;
+	padding:0;
 	font-family:code, "Helvetica", sans-serif;
-	background: #f0f0f0 fixed repeat url('../images/testTile.gif');
+	background: #f0f0f0 fixed repeat url(images/testTile.gif);
 	color:#030303;
 	transition: margin-left 1s;
 	position:relative;
@@ -75,14 +77,19 @@ h3 {
 	margin-top:30px;
 	margin-bottom:20px;
 	font-size:24px;
-	padding-left:5px;
-	padding-bottom:5px;
+	padding:5px;
 	background:#0f0f0f;
 	color:#fff;
 }
 #header:hover #nav{
 	opacity:1;
 	transition:opacity 1s;
+}
+#nav a:link, #nav a:visited{
+	color:#fff !important;
+}
+#nav a:hover{
+		color:#d4d349 !important;
 }
 #stroke{
 	text-align:center;
@@ -105,7 +112,7 @@ h3 {
 	margin-top:20px;
 	transition:opacity 1s;
 	overflow:hidden;
-	box-shadow: 2px 2px 3px 3px #5f5f5f;
+	/*box-shadow: 2px 2px 3px 3px #5f5f5f;*/
 	position:relative;
 	font-size:12px;
 	cursor:pointer;
@@ -128,9 +135,10 @@ h3 {
 }
 .container_12 {
 	position:relative;
+	margin-bottom:100px !important;
 }
 .grid_3:hover .titles {
-	opacity:.75;
+	opacity:.90;
 	transition:opacity .5s;
 }
 .statement {
@@ -163,7 +171,7 @@ h3 {
 }
 .piece {
 	max-width:850px;
-	color:#fff;
+	color:#000;
 }
 .piece p{
 	font-family:helvetica;
@@ -177,7 +185,7 @@ h3 {
 /* Link Styles */
 
 a:link, a:visited {
-	color:#fff;
+	color:#000;
 	text-decoration:none;
 }
 a:hover, a:active {

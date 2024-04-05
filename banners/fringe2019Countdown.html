@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        var clickTag = "http://rochesterfringe.com/";
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Aladin&display=swap" rel="stylesheet">
+    <meta name="ad.size" content="width=300,height=250">
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nx_nxTimer_container {
+            width: 300px;
+            margin: 0;
+            padding: 0;
+            height: 250px;
+            background-image: url(Fringe2019CD-300x250.jpg);
+            background-repeat: no-repeat;
+            font-family: 'Aladin', cursive;
+            cursor: pointer;
+        }
+
+        .timeframeWrap {
+            width: 300px;
+            margin-left: 24px;
+            margin-top: 0
+        }
+
+        .timeFrame {
+            width: 33px;
+            float: left;
+            margin-top: 194px;
+            margin-right: 36px;
+            font-size: 11px;
+            color: #FFF;
+            text-align: center
+        }
+
+        .nxCountdownTimer {
+            font-size: 28px;
+        }
+
+        .nx_nxTimer_sponsor {
+            width: 300px
+        }
+    </style>
+    <script language="JavaScript">
+        function nxCountdownTimer() {
+            var timerID = 'nxCountdown';
+            var countdownDaysTxt = timerID + 'Days';
+            var countdownDaysEl = document.getElementById(countdownDaysTxt);
+            var countdownHoursTxt = timerID + 'Hours';
+            var countdownHoursEl = document.getElementById(countdownHoursTxt);
+            var countdownMinutesTxt = timerID + 'Minutes';
+            var countdownMinutesEl = document.getElementById(countdownMinutesTxt);
+            var countdownSecondsTxt = timerID + 'Seconds';
+            var countdownSecondsEl = document.getElementById(countdownSecondsTxt);
+            var countdownDate = new Date("September 10, 2019 09:00:00 AM EDT"); /*input desired date here*/
+            var currentDate = new Date();
+            var dateDifference = new Date(countdownDate - currentDate);
+            var seconds = dateDifference.valueOf() / 1000;
+            var days = (seconds > 0) ? (Math.floor(seconds / 86400)) % 100000 : 0;
+            countdownDaysEl.innerHTML = days;
+            var hours = (seconds > 0) ? nxLeadingZeros((Math.floor(seconds / 3600)) % 24) : 0;
+            countdownHoursEl.innerHTML = hours;
+            var minutes = (seconds > 0) ? nxLeadingZeros((Math.floor(seconds / 60)) % 60) : 0;
+            countdownMinutesEl.innerHTML = minutes;
+            var seconds = (seconds > 0) ? nxLeadingZeros((Math.floor(seconds)) % 60) : 0;
+            countdownSecondsEl.innerHTML = seconds;
+            setTimeout("nxCountdownTimer()", 1000);
+        }
+
+        function nxLeadingZeros(num, length) {
+            if (length == null) {
+                length = 2;
+            }
+            num = String(num);
+            while (num.length < length) {
+                num = "0" + num;
+            }
+            return num;
+        };
+    </script>
+</head>
+
+<body>
+    <div class="nx_nxTimer_container" onClick="javascript:window.open(window.clickTag);">
+        <div class="timeframeWrap">
+            <div class="timeFrame">
+                <span class="nxCountdownTimer" id="nxCountdownDays"></span><br /> Days</div>
+            <div class="timeFrame"><span class="nxCountdownTimer" id="nxCountdownHours"></span><br /> Hours
+            </div>
+            <div class="timeFrame">
+                <span class="nxCountdownTimer" id="nxCountdownMinutes"></span><br /> Minutes</div>
+            <div class="timeFrame"><span class="nxCountdownTimer" id="nxCountdownSeconds"></span><br /> Seconds
+            </div>
+        </div>
+        <script type="text/javascript">
+            /*<![CDATA[*/
+            nxCountdownTimer(); /*]]>*/
+        </script>
+    </div>
+</body>
+
+</html>
