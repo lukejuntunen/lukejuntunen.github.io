@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<student-data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<record>
+		<Marching_Name>Arden Ingersoll</Marching_Name>
+		<Major>Performance</Major>
+		<Instrument>Double Bass</Instrument>
+		<Degree>Advanced Diploma</Degree>
+	</record>
+	<record>
+		<Marching_Name>Belle Ra 
+</Marching_Name>
+		<Major>Performance</Major>
+		<Instrument>Cello</Instrument>
+		<Degree>Advanced Diploma</Degree>
+	</record>
+	<record>
+		<Marching_Name>Jiaqi Yu</Marching_Name>
+		<Major>Performance</Major>
+		<Instrument>Violin</Instrument>
+		<Degree>Advanced Diploma</Degree>
+	</record>
+</student-data>

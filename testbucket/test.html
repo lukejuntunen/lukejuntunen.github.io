@@ -16,7 +16,7 @@ function loadXMLDoc() {
       myFunction(this);
     }
   };
-  xmlhttp.open("GET", "MarchingList.xml", true);
+  xmlhttp.open("GET", "AdvDip.xml", true);
   xmlhttp.send();
 }
 
@@ -31,7 +31,7 @@ function myFunction(xml) {
   distinction = xmlDoc.getElementsByTagName("Distinctions");
   minor = xmlDoc.getElementsByTagName("Minor");
   cdate = xmlDoc.getElementsByTagName("Conferral_date>");
-    
+
   for (i = 0; i< x.length; i++) {
    txt += "<strong>" + name[i].childNodes[0].nodeValue + "</strong><br>" + Major[i].childNodes[0].nodeValue + " &#40;" + instrument[i].childNodes[0].nodeValue + "&#41;, " + distinction[i].childNodes[0].nodeValue + "; " + minor[i].childNodes[0].nodeValue + " &mdash;Minor<br><br>";
   }
